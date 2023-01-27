@@ -1,0 +1,6 @@
+docker container run -p 3000:3000 -d --name recommendation-system alexsuspis/finding-movies-to-watch-recommendation-system && docker container logs recommendation-system
+
+docker image build . -t alexsuspis/finding-movies-to-watch-recommendation-system
+
+docker container rm -f recommendation-system
+
